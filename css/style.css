@@ -1,11 +1,11 @@
 /* Font Faces */
 @font-face {
   font-family: f1;
-  src: url("/fonts/Clarendon-Regular.otf");
+  src: url("../fonts/Clarendon-Regular.otf");
 }
 @font-face {
   font-family: f2;
-  src: url("/fonts/Clash-Display.ttf");
+  src: url("../fonts/Clash-Display.ttf");
 }
 /* Animations */
 @keyframes blink {
@@ -69,7 +69,7 @@
   margin-left: auto;
   margin-right: auto;
   position: relative;
-  background: url("/resources/images/0_1_2.png");
+  background: url("../resources/images/0_1_2.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
