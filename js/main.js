@@ -19,13 +19,13 @@ red_btn.addEventListener("click", function onClick(event) {
 });
 gold_btn.addEventListener("click", function onClick(event) {
   //   console.log("It works");
-  bk.style.backgroundImage = 'url("../resources/images/0_1_2.png")';
+  bk.style.backgroundImage = 'url("../p1/resources/images/0_1_2.png")';
   buy_btn.style.backgroundColor = "#e4d7b4";
   buy_btn.style.color = "black";
 });
 black_btn.addEventListener("click", function onClick(event) {
   console.log("It works");
-  bk.style.backgroundImage = 'url("../resources/images/0_1_5.png")';
+  bk.style.backgroundImage = 'url("../p1/resources/images/0_1_5.png")';
   buy_btn.style.backgroundColor = "#a8b3b6";
   buy_btn.style.color = "black";
 });
