@@ -1,11 +1,11 @@
 /* Font Faces */
 @font-face {
   font-family: f1;
-  src: url("../fonts/Clarendon-Regular.otf");
+  src: url("/fonts/Clarendon-Regular.otf");
 }
 @font-face {
   font-family: f2;
-  src: url("../fonts/Clash-Display.ttf");
+  src: url("/fonts/Clash-Display.ttf");
 }
 /* Animations */
 @keyframes blink {
@@ -19,11 +19,23 @@
     opacity: 100%;
   }
 }
+@keyframes warm {
+  0% {
+    filter: brightness(60%);
+  }
+  50% {
+    filter: brightness(110%);
+  }
+  100% {
+    filter: brightness(60%);
+  }
+}
 /* Globals */
 * {
   margin: 0;
   padding: 0;
 }
+
 /* Standards */
 .transparent {
   background: transparent;
@@ -37,6 +49,7 @@
 .font-1 {
   font-family: f1;
 }
+
 /* NAVBAR PROPERTIES */
 
 .navbar {
@@ -62,13 +75,14 @@
   background: url("../resources/images/0.png");
   background-size: cover;
   width: auto;
-  height: auto;
-  overflow-x: hidden;
+  height: 110vh;
+}
+.landing .row {
+  margin: 0;
 }
 .landing-img {
   margin-left: auto;
   margin-right: auto;
-  position: relative;
   background: url("../resources/images/0_1_2.png");
   background-size: cover;
   background-repeat: no-repeat;
@@ -82,12 +96,12 @@
   top: -5vh;
   font-family: f2;
 }
-.heading-1 {
+.landing .heading-1 {
   font-size: 10vw;
   color: #cbc7bf;
   text-align: center;
 }
-.heading-2 {
+.landing .heading-2 {
   font-size: 5vw;
   color: grey;
   text-align: center;
@@ -142,7 +156,286 @@
   background: #a69669;
   transition: ease-in-out 0.2s;
 }
-/* Responsive stuff  */
+
+/* Noise Cancellation Section */
+.anc {
+  width: auto;
+  position: relative;
+  top: 0vh;
+  margin: auto;
+  height: auto;
+  background: #0e0814;
+}
+.anc .row {
+  margin: 0;
+}
+.anc-img {
+  background: url("../resources/images/1_2_1.png");
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 60vh;
+  left: 0;
+  position: relative;
+  animation: warm ease-in-out 4s infinite;
+}
+.anc-text {
+  background: #0e0814;
+}
+.anc .heading-1 {
+  color: white;
+  font-family: f2;
+  width: fit-content;
+  text-align: center;
+  align-content: center;
+  font-size: 5vh;
+  margin-left: auto;
+  margin-right: auto;
+}
+.anc .heading-3 {
+  color: gainsboro;
+  text-align: justify;
+  font-size: 3vw;
+  padding: 5vh;
+}
+
+/* Audio Driver Section */
+.driver {
+  position: relative;
+  width: auto;
+  height: auto;
+  top: 0vh;
+  background: #868686;
+}
+.driver .row {
+  margin: 0;
+}
+.driver .driver-img {
+  background: url("../resources/images/2_2.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: auto;
+  height: 60vh;
+}
+.driver .heading-1 {
+  color: black;
+  font-size: 8vh;
+  font-family: f2;
+  position: relative;
+  text-align: center;
+  top: 5vh;
+}
+.hifi {
+  background: url("../resources/images/2_3.png");
+  background-size: cover;
+  width: 10vh;
+  height: 10vh;
+  filter: contrast(90%);
+  position: relative;
+  top: 15vh;
+}
+
+/* Showcase Section */
+.showcase {
+  position: relative;
+  width: auto;
+  top: -10vh;
+  height: fit-content;
+  margin: auto;
+  background: black;
+}
+.showcase .row {
+  margin: 0;
+}
+.showcase-image-1 {
+  background: url("../resources/images/row-1-column-1.png");
+  background-position: center;
+  background-size: cover;
+  width: auto;
+  margin: auto;
+  height: 70vh;
+}
+.showcase-image-2 {
+  background: url("../resources/images/row-1-column-2.png");
+  background-position: center;
+  background-size: cover;
+  width: auto;
+  margin: 0;
+  height: 70vh;
+}
+.showcase-image-3 {
+  background: url("../resources/images/row-1-column-3.png");
+  background-position: center;
+  background-size: cover;
+  width: auto;
+  margin: 0;
+  height: 70vh;
+}
+
+.showcase .heading-1 {
+  font-family: f2;
+  font-size: 5vh;
+  text-align: center;
+  color: gainsboro;
+  padding-left: none;
+  padding: 5vh;
+  padding-right: none;
+  background: black;
+}
+
+/* Battery Section */
+.battery {
+  width: 100%;
+  height: 100vh;
+  top: -11vh;
+  position: relative;
+  margin: auto;
+  background-color: black;
+}
+.battery .row {
+  margin: 0;
+  position: relative;
+  top: 15vh;
+}
+.battery-image {
+  background: url("../resources/images/3_1.png");
+  width: auto;
+  position: relative;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 60vh;
+  margin: 0;
+  margin-top: 5vh;
+}
+
+.battery .heading-1 {
+  font-family: f2;
+  font-size: 7vh;
+  color: gainsboro;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 110%;
+  text-align: center;
+}
+/* .battery .ico {
+  background: url("../resources/images/icons/icons8-lightning-50.png");
+  width: 20px;
+  height: 20px;
+  color: white;
+  background-size: cover;
+   filter: ; 
+} */
+
+.battery .heading-2 {
+  font-family: f2;
+  position: relative;
+  font-size: 2vh;
+  top: 2vh;
+  text-align: center;
+  color: grey;
+}
+
+/* Controls Section */
+.controls {
+  width: auto;
+  height: 110vh;
+  position: relative;
+  margin: auto;
+  top: -15vh;
+  background: black;
+}
+.controls .row {
+  margin: 0;
+  display: flex;
+  flex-direction: column-reverse;
+  position: relative;
+  top: 10vh;
+}
+
+.controls-image {
+  background: url("../resources/images/4_3_f.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 60vh;
+}
+
+.controls .heading-1 {
+  font-family: f2;
+  font-size: 8vh;
+  text-align: center;
+  line-height: 110%;
+  color: gainsboro;
+}
+.controls .alexa,
+.google {
+  position: relative;
+  top: -5vh;
+  background: white;
+  opacity: 90%;
+  border-radius: 30px;
+  height: 8vh;
+  margin-bottom: 2vh;
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.controls .alexa-img {
+  background: url("../resources/images/assistant_2.png");
+  width: 100%;
+  background-size: contain;
+  background-position: center;
+  border-radius: 100px;
+  border: none;
+  background-repeat: no-repeat;
+  height: 8vh;
+}
+.controls .google-img {
+  background: url("../resources/images/assistant_1.png");
+  width: 100%;
+  background-position: center;
+  background-size: contain;
+  border-radius: 100px;
+  margin: auto;
+  border: none;
+  background-repeat: no-repeat;
+  height: 8vh;
+}
+
+/* Comfort Section */
+.comfort {
+  width: auto;
+  height: 90vh;
+  position: relative;
+  background: black;
+  top: -20vh;
+}
+.comfort .row {
+  margin: 0;
+  position: relative;
+  top: 10vh;
+}
+.comfort .heading-1 {
+  font-family: f2;
+  font-size: 7vh;
+  color: gainsboro;
+  text-align: center;
+  line-height: 110%;
+}
+.comfort .comfortable {
+  background: url("../resources/images/5_1.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 60vh;
+}
+/* Responsive stuff */
 
 @media only screen and (min-width: 768px) {
   nav {
@@ -181,11 +474,11 @@
     bottom: auto;
     /* margin: 5vh; */
   }
-  .heading-1 {
+  .landing .heading-1 {
     font-size: 5vw;
     color: #cbc7bf;
   }
-  .heading-2 {
+  .landing .heading-2 {
     font-size: 2vw;
     color: grey;
     text-align: left;
@@ -208,6 +501,270 @@
   .buy {
     left: 2vh;
   }
+
+  /* Noise Cancellation Section */
+  .anc {
+    width: auto;
+    position: relative;
+    top: -15vh;
+    margin: 0;
+    height: auto;
+    background: #0e0814;
+  }
+  .anc-img {
+    background: url("../resources/images/1_2_1.png");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+  }
+  .anc-text {
+    background: #0e0814;
+    width: 100%;
+    height: 60vh;
+    position: relative;
+  }
+  .anc .heading-1 {
+    color: white;
+    font-family: f2;
+    position: relative;
+    top: 30vh;
+    text-align: center;
+    font-size: 6vh;
+  }
+  .anc .heading-3 {
+    color: gainsboro;
+    text-align: justify;
+    font-size: 1vw;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    top: 30vh;
+    padding: 5vh;
+  }
+
+  /* Audio Driver Section */
+  .driver {
+    position: relative;
+    width: auto;
+    height: auto;
+    top: -15vh;
+    background: #868686;
+  }
+  .driver .driver-img {
+    background: url("../resources/images/2_2.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: auto;
+    height: 80vh;
+  }
+  .driver .heading-1 {
+    color: black;
+    font-size: 10vh;
+    font-family: f2;
+    position: relative;
+    text-align: center;
+    top: 25vh;
+  }
+  /* Showcase Section */
+  .showcase {
+    position: relative;
+    width: fit-content;
+    top: -15vh;
+    height: 100vh;
+    background: black;
+  }
+  .showcase .heading-1 {
+    width: auto;
+  }
+
+  .showcase-image-1 {
+    background: url("../resources/images/row-1-column-1.png");
+    background-position: center;
+    background-size: cover;
+    width: 34vw;
+    margin: 0;
+    height: 70vh;
+  }
+  .showcase-image-2 {
+    background: url("../resources/images/row-1-column-2.png");
+    background-position: center;
+    background-size: cover;
+    width: 34vw;
+    margin: 0;
+    height: 70vh;
+  }
+  .showcase-image-3 {
+    background: url("../resources/images/row-1-column-3.png");
+    background-position: center;
+    background-size: cover;
+    width: 32vw;
+    margin: 0;
+    height: 70vh;
+  }
+
+  /* Battery Section */
+  .battery {
+    width: 100%;
+    height: 80vh;
+    top: -15vh;
+    position: relative;
+    margin: auto;
+    background-color: black;
+  }
+  .battery .row {
+    margin: 0;
+    position: relative;
+    top: 0vh;
+  }
+  .battery-image {
+    background: url("../resources/images/3_1.png");
+    width: auto;
+    position: relative;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 75vh;
+    margin: 0;
+  }
+
+  .battery .heading-1 {
+    font-family: f2;
+    font-size: 9vh;
+    color: gainsboro;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 110%;
+    position: relative;
+    top: 20vh;
+    text-align: center;
+  }
+
+  .battery .heading-2 {
+    font-family: f2;
+    position: relative;
+    font-size: 4vh;
+    top: 22vh;
+    text-align: center;
+    color: grey;
+  }
+
+  /* Controls Section */
+  .controls {
+    width: auto;
+    height: 100vh;
+    position: relative;
+    margin: auto;
+    top: -20vh;
+    background: black;
+  }
+  .controls .row {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: 10vh;
+  }
+
+  .controls-image {
+    background: url("../resources/images/4_3_f.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 90vh;
+  }
+
+  .controls .heading-1 {
+    font-family: f2;
+    font-size: 8vh;
+    text-align: center;
+    position: relative;
+    line-height: 110%;
+    top: 20vh;
+    color: gainsboro;
+  }
+  .controls .row .row {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+  }
+  .controls .alexa,
+  .google {
+    position: relative;
+    background: white;
+    border-radius: 30px;
+    height: 10vh;
+    bottom: 2vh;
+    width: 80%;
+    opacity: 90%;
+    top: 20vh;
+  }
+
+  .controls .alexa-img {
+    background: url("../resources/images/assistant_2.png");
+    width: 100%;
+    background-size: contain;
+    background-position: center;
+    border-radius: 100px;
+    border: none;
+    background-repeat: no-repeat;
+    height: 10vh;
+  }
+  .controls .google-img {
+    background: url("../resources/images/assistant_1.png");
+    width: 100%;
+    background-position: center;
+    background-size: contain;
+    border-radius: 100px;
+    margin: auto;
+    border: none;
+    background-repeat: no-repeat;
+    height: 10vh;
+  }
+  /* Comfort Section */
+  .comfort {
+    width: auto;
+    height: 70vh;
+    position: relative;
+    background: black;
+    top: -20vh;
+  }
+  .comfort .row {
+    margin: 0;
+    position: relative;
+    top: 0vh;
+  }
+  .comfort .heading-1 {
+    font-family: f2;
+    font-size: 8vh;
+    color: gainsboro;
+    position: relative;
+    top: 20vh;
+    text-align: center;
+    line-height: 110%;
+  }
+  .comfort .comfortable {
+    background: url("../resources/images/5_1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 60vh;
+  } /* Comfortable Section */
+
+  .comfort .comfortable {
+    background: url("../resources/images/5_1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 60vh;
+  }
 }
 @media only screen and (min-width: 600px) and (max-width: 768px) {
   .landing-text {
@@ -215,12 +772,12 @@
     top: 07vh;
     font-family: f2;
   }
-  .heading-1 {
+  .landing .heading-1 {
     font-size: 6vw;
     color: #cbc7bf;
     text-align: center;
   }
-  .heading-2 {
+  .landing .heading-2 {
     font-size: 3vw;
     color: grey;
     text-align: center;
@@ -241,6 +798,242 @@
   .buy {
     position: relative;
     top: 10vh;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* Noise Cancellation Section */
+  .anc {
+    width: auto;
+    position: relative;
+    top: 0vh;
+    margin: 0;
+    height: auto;
+    background: #0e0814;
+  }
+  .anc-img {
+    background: url("../resources/images/1_2_1.png");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    height: 80vh;
+  }
+  .anc-text {
+    background: black;
+    width: 100%;
+    height: 60vh;
+    position: relative;
+  }
+
+  .anc .heading-1 {
+    color: white;
+    font-family: f2;
+    position: relative;
+    text-align: center;
+    font-size: 6vw;
+  }
+  .anc .heading-3 {
+    color: gainsboro;
+    text-align: justify;
+    font-size: 2vw;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    padding: 5vh;
+  }
+  /* Audio Driver Section */
+  .driver {
+    position: relative;
+    width: auto;
+    height: auto;
+    top: 0vh;
+    background: #868686;
+  }
+  .driver .driver-img {
+    background: url("../resources/images/2_2.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: auto;
+    height: 100vh;
+  }
+  /* Showcase Section */
+  .showcase {
+    position: relative;
+    width: fit-content;
+    top: -5vh;
+    height: 100vh;
+    background: black;
+  }
+
+  .showcase-image-1 {
+    background: url("../resources/images/row-1-column-1.png");
+    background-position: center;
+    background-size: cover;
+    width: 34vw;
+    margin: 0;
+    height: 70vh;
+  }
+  .showcase-image-2 {
+    background: url("../resources/images/row-1-column-2.png");
+    background-position: center;
+    background-size: cover;
+    width: 34vw;
+    margin: 0;
+    height: 70vh;
+  }
+  .showcase-image-3 {
+    background: url("../resources/images/row-1-column-3.png");
+    background-position: center;
+    background-size: cover;
+    width: 31vw;
+    margin: 0;
+    height: 70vh;
+  }
+  /* Battery Section */
+  .battery {
+    width: 100%;
+    height: 100vh;
+    top: -11vh;
+    position: relative;
+    margin: auto;
+    background-color: black;
+  }
+  .battery .row {
+    margin: 0;
+    position: relative;
+    top: 10vh;
+  }
+  .battery-image {
+    background: url("../resources/images/3_1.png");
+    width: auto;
+    position: relative;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 60vh;
+    margin: 0;
+    margin-top: 5vh;
+  }
+
+  .battery .heading-1 {
+    font-family: f2;
+    font-size: 7vh;
+    color: gainsboro;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 110%;
+    text-align: center;
+  }
+
+  .battery .heading-2 {
+    font-family: f2;
+    position: relative;
+    font-size: 2vh;
+    top: 2vh;
+    text-align: center;
+    color: grey;
+  }
+  /* Controls Section */
+  .controls {
+    width: auto;
+    height: 110vh;
+    position: relative;
+    margin: auto;
+    top: -15vh;
+    background: black;
+  }
+  .controls .row {
+    margin: 0;
+    display: flex;
+    flex-direction: column-reverse;
+    position: relative;
+    top: 8vh;
+  }
+
+  .controls-image {
+    background: url("../resources/images/4_3_f.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 60vh;
+  }
+
+  .controls .heading-1 {
+    font-family: f2;
+    font-size: 8vh;
+    text-align: center;
+    line-height: 110%;
+    color: gainsboro;
+  }
+  .controls .alexa,
+  .google {
+    position: relative;
+    top: -5vh;
+    background: white;
+    border-radius: 30px;
+    height: 6vh;
+    margin-bottom: 2vh;
+    width: 40%;
+    opacity: 90%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .controls .alexa-img {
+    background: url("../resources/images/assistant_2.png");
+    width: 100%;
+    background-size: contain;
+    background-position: center;
+    border-radius: 100px;
+    border: none;
+    background-repeat: no-repeat;
+    height: 6vh;
+  }
+  .controls .google-img {
+    background: url("../resources/images/assistant_1.png");
+    width: 100%;
+    background-position: center;
+    background-size: contain;
+    border-radius: 100px;
+    margin: auto;
+    border: none;
+    background-repeat: no-repeat;
+    height: 6vh;
+  }
+
+  /* Comfort Section */
+  .comfort {
+    width: auto;
+    height: 100vh;
+    position: relative;
+    background: black;
+    top: -20vh;
+  }
+  .comfort .row {
+    margin: 0;
+    position: relative;
+    top: 10vh;
+  }
+  .comfort .heading-1 {
+    font-family: f2;
+    font-size: 7vh;
+    color: gainsboro;
+    text-align: center;
+    line-height: 110%;
+  }
+  .comfort .comfortable {
+    background: url("../resources/images/5_1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    margin-top: 5vh;
+    height: 60vh;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1068px) {
@@ -280,11 +1073,11 @@
     bottom: auto;
     /* margin: 5vh; */
   }
-  .heading-1 {
+  .landing .heading-1 {
     font-size: 5vw;
     color: #cbc7bf;
   }
-  .heading-2 {
+  .landing .heading-2 {
     font-size: 3vw;
     color: grey;
     text-align: left;
@@ -294,5 +1087,187 @@
     width: 80%;
     position: relative;
     top: 2vh;
+  }
+  /*Noise Cancellation Section  */
+  .anc {
+    height: 80vh;
+  }
+  .anc-img {
+    background: url("../resources/images/1_2_1.png");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    top: 5vh;
+  }
+  .anc-text {
+    background: black;
+    width: 100%;
+    height: 60vh;
+    position: relative;
+  }
+  .anc-text {
+    background: #0e0814;
+    width: 100%;
+    height: 80vh;
+    position: relative;
+  }
+  .anc .heading-1 {
+    color: white;
+    font-family: f2;
+    position: relative;
+    top: 30vh;
+    text-align: center;
+    font-size: 4vh;
+  }
+  .anc .heading-3 {
+    color: gainsboro;
+    text-align: justify;
+    font-size: 2vh;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    top: 30vh;
+    padding: 5vh;
+  }
+  .driver .heading-1 {
+    color: black;
+    font-size: 10vh;
+    font-family: f2;
+    position: relative;
+    text-align: center;
+    top: 5vh;
+  }
+  /* Showcase Section */
+  .showcase {
+    position: relative;
+    width: fit-content;
+    top: -15vh;
+    height: 100vh;
+    background: black;
+  }
+
+  .showcase-image-1 {
+    background: url("../resources/images/row-1-column-1.png");
+    background-position: center;
+    background-size: cover;
+    width: 34vw;
+    margin: 0;
+    height: 70vh;
+  }
+  .showcase-image-2 {
+    background: url("../resources/images/row-1-column-2.png");
+    background-position: center;
+    background-size: cover;
+    width: 34vw;
+    margin: 0;
+    height: 70vh;
+  }
+  .showcase-image-3 {
+    background: url("../resources/images/row-1-column-3.png");
+    background-position: center;
+    background-size: cover;
+    width: 31vw;
+    margin: 0;
+    height: 70vh;
+  }
+  /* Battery Section */
+  .battery {
+    width: 100%;
+    height: 90vh;
+    top: -16vh;
+    position: relative;
+    margin: auto;
+    background-color: black;
+  }
+  .battery .row {
+    margin: 0;
+    position: relative;
+    top: 5vh;
+  }
+  .battery-image {
+    background: url("../resources/images/3_1.png");
+    width: auto;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    margin: 0;
+  }
+
+  .battery .heading-1 {
+    font-family: f2;
+    font-size: 7vh;
+    color: gainsboro;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 110%;
+    text-align: center;
+    position: relative;
+    top: 25vh;
+  }
+
+  .battery .heading-2 {
+    font-family: f2;
+    position: relative;
+    font-size: 3vh;
+    top: 27vh;
+    text-align: center;
+    color: grey;
+  }
+  /* Controls Section */
+  .controls .controls-image {
+    height: 80vh;
+  }
+  .controls .heading-1 {
+    font-size: 6vh;
+  }
+  .controls .alexa,
+  .google {
+    width: 60%;
+    opacity: 90%;
+    height: auto;
+  }
+  .controls .alexa-img {
+    width: 100%;
+    height: 5vh;
+  }
+  .controls .google-img {
+    width: 100%;
+    height: 5vh;
+  }
+  /* Comfort Section */
+  .comfort {
+    width: auto;
+    height: 60vh;
+    position: relative;
+    background: black;
+    top: -20vh;
+  }
+  .comfort .row {
+    margin: 0;
+    position: relative;
+    top: 0vh;
+  }
+  .comfort .heading-1 {
+    font-family: f2;
+    font-size: 8vh;
+    color: gainsboro;
+    position: relative;
+    top: 20vh;
+    text-align: center;
+    line-height: 110%;
+  }
+  .comfort .comfortable {
+    background: url("../resources/images/5_1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 60vh;
   }
 }
