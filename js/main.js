@@ -7,13 +7,13 @@ var buy_btn = document.getElementById("buy");
 
 blue_btn.addEventListener("click", function onClick(event) {
   //   console.log("It works");
-  bk.style.backgroundImage = 'url("../resources/images/0_1_6.png")';
+  bk.style.backgroundImage = 'url("../p1/resources/images/0_1_6.png")';
   buy_btn.style.backgroundColor = "#414bb2";
   buy_btn.style.color = "white";
 });
 red_btn.addEventListener("click", function onClick(event) {
   //   console.log("It works");
-  bk.style.backgroundImage = 'url("../resources/images/0_1_7.png")';
+  bk.style.backgroundImage = 'url("../p1/resources/images/0_1_7.png")';
   buy_btn.style.backgroundColor = "#a53019";
   buy_btn.style.color = "white";
 });
