@@ -11,7 +11,7 @@ var width = window.innerWidth;
 
 blue_btn.addEventListener("click", function onClick(event) {
   //   console.log("It works");
-  landing.style.backgroundImage = 'url("../p1/resources/images/0_1_6.png")';
+  landing.style.backgroundImage = 'url("https://imgur.com/aKGW1da")';
   battery.style.backgroundImage = 'url("../p1/resources/images/3_2.png")';
   controls.style.backgroundImage = 'url("../p1/resources/images/4_3_f.png")';
 
@@ -25,7 +25,7 @@ blue_btn.addEventListener("click", function onClick(event) {
 });
 red_btn.addEventListener("click", function onClick(event) {
   //   console.log("It works");
-  landing.style.backgroundImage = 'url("../p1/resources/images/0_1_7.png")';
+  landing.style.backgroundImage = 'url("https://imgur.com/obwGumT")';
   battery.style.backgroundImage = 'url("../p1/resources/images/3_1.png")';
   controls.style.backgroundImage = 'url("../p1/resources/images/4_3_f_1.png")';
   if (width > 767) {
@@ -38,7 +38,7 @@ red_btn.addEventListener("click", function onClick(event) {
 });
 gold_btn.addEventListener("click", function onClick(event) {
   //   console.log("It works");
-  landing.style.backgroundImage = 'url("../p1/resources/images/0_1_2.png")';
+  landing.style.backgroundImage = 'url("https://imgur.com/vFW8a7M")';
   battery.style.backgroundImage = 'url("../p1/resources/images/3_4.png")';
   controls.style.backgroundImage = 'url("../p1/resources/images/4_3_f_3.png")';
   if (width > 767) {
@@ -51,7 +51,7 @@ gold_btn.addEventListener("click", function onClick(event) {
 });
 black_btn.addEventListener("click", function onClick(event) {
   console.log("It works");
-  landing.style.backgroundImage = 'url("../p1/resources/images/0_1_5.png")';
+  landing.style.backgroundImage = 'url("https://imgur.com/R4PKzsT")';
   battery.style.backgroundImage = 'url("../p1/resources/images/3_3.png")';
   controls.style.backgroundImage = 'url("../p1/resources/images/4_3_f_2.png")';
   if (width > 767) {
