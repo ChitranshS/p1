@@ -507,6 +507,97 @@ html {
   line-height: 110%;
   text-align: center;
 }
+/* Carousel Section */
+.purchase {
+  position: relative;
+  background: url("../resources/images/0.png");
+  background-size: cover;
+  width: auto;
+  height: 110vh;
+}
+.purchase .row {
+  margin: 0;
+}
+.purchase-img {
+  margin-left: auto;
+  margin-right: auto;
+  background: url("../resources/images/0_1_2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 90vw;
+  height: 65vh;
+  border: none;
+}
+.purchase-text {
+  position: relative;
+  top: 10vh;
+  font-family: f3;
+}
+.purchase .heading-1 {
+  font-size: 10vw;
+  color: #cbc7bf;
+  text-align: center;
+}
+.purchase .heading-2 {
+  font-size: 5vw;
+  color: grey;
+  text-align: center;
+}
+.purchase-text .row {
+  width: 100%;
+  position: relative;
+  top: 6vh;
+}
+.color-panel {
+  width: 5vw;
+  display: flex;
+  justify-content: space-evenly;
+  left: auto;
+  right: auto;
+}
+.btns {
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 40px;
+}
+
+.buy {
+  width: 16vh;
+  height: 6vh;
+  border: none;
+  border-radius: 10px;
+  background: #e4d7b4;
+  position: relative;
+  top: 15vh;
+  left: 30%;
+  margin-right: auto;
+}
+.buy:hover {
+  background: #a69669;
+  transition: ease-in-out 0.2s;
+}
+
+/* Footer Section */
+footer {
+  background: #212121;
+  font-family: f2;
+  margin: 0;
+  padding: 10vh;
+}
+footer .nav-item {
+  color: white;
+}
+footer .heading-1 {
+  font-size: 5vh;
+  width: fit-content;
+  text-align: center;
+  color: white;
+  margin: 2vh;
+  margin-left: auto;
+  margin-right: auto;
+}
 /* Responsive stuff */
 
 @media only screen and (min-width: 768px) {
@@ -902,6 +993,53 @@ html {
     line-height: 110%;
     text-align: center;
   }
+  /* Purchase Section */
+  .purchase {
+    position: relative;
+    background: url("../resources/images/0.png");
+    background-size: cover;
+    width: auto;
+    height: 90vh;
+    z-index: 0;
+    top: -30vh;
+    overflow: hidden;
+  }
+
+  .purchase-text {
+    position: relative;
+    top: 10vh;
+    max-width: fit-content;
+    bottom: auto;
+    /* margin: 5vh; */
+  }
+
+  .purchase .heading-1 {
+    font-size: 5vw;
+    color: #cbc7bf;
+  }
+  .purchase .heading-2 {
+    font-size: 2vw;
+    color: grey;
+    text-align: left;
+    width: auto;
+    margin-left: 1vh;
+  }
+  .purchase-text .row {
+    width: 50%;
+    position: relative;
+    top: 2vh;
+  }
+  .color-panel {
+    width: 5vw;
+    display: flex;
+    position: relative;
+    justify-content: space-evenly;
+    left: auto;
+    right: auto;
+  }
+  .buy {
+    left: 2vh;
+  }
 }
 @media only screen and (min-width: 600px) and (max-width: 768px) {
   .landing-text {
@@ -1243,6 +1381,25 @@ html {
     line-height: 110%;
     text-align: center;
   }
+   /* Purchase Section */
+  .purchase {
+    height: 130vh;
+  }
+  .purchase-text {
+    position: relative;
+    top: 07vh;
+    font-family: f2;
+  }
+  .purchase .heading-1 {
+    font-size: 6vw;
+    color: #cbc7bf;
+    text-align: center;
+  }
+  .purchase .heading-2 {
+    font-size: 3vw;
+    color: grey;
+    text-align: center;
+  }
 }
 @media only screen and (min-width: 768px) and (max-width: 1068px) {
   nav {
@@ -1548,5 +1705,49 @@ html {
     margin-right: auto;
     line-height: 110%;
     text-align: center;
+  }
+   .purchase {
+    position: relative;
+    background: url("../resources/images/0.png");
+    background-size: cover;
+    width: auto;
+    height: 170vh;
+    z-index: 0;
+    top: -10vh;
+    overflow: hidden;
+  }
+
+  .purchase-img {
+    background: url("../resources/images/0_1_2.png");
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    width: auto !important;
+    height: 90vh;
+    position: relative;
+    top: 0vh;
+    /* transform: rotateZ(10deg); */
+  }
+  .purchase-text {
+    position: relative;
+    top: 40vh;
+    max-width: fit-content;
+    bottom: auto;
+    /* margin: 5vh; */
+  }
+  .purchase .heading-1 {
+    font-size: 5vw;
+    color: #cbc7bf;
+  }
+  .purchase .heading-2 {
+    font-size: 3vw;
+    color: grey;
+    text-align: left;
+    width: auto;
+  }
+  .purchase-text .row {
+    width: 80%;
+    position: relative;
+    top: 2vh;
   }
 }
