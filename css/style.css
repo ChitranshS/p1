@@ -601,6 +601,10 @@ footer .heading-1 {
   margin-left: auto;
   margin-right: auto;
 }
+footer .buy :hover{
+  color:grey;
+  transition:ease-in-out .3s;
+}
 /* Responsive stuff */
 
 @media only screen and (min-width: 768px) {
